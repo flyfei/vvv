@@ -75,10 +75,6 @@
 				alert('视频地址不正确！');
 				return;
 			}
-			if($url == "" || $url == null || !/^http.*=$/.test($api)){
-				alert('无效API！');
-				return;
-			}
 			window.open("https://api.bbbbbb.me/jx/?url="+$url);
 		});
 	    function init(){
