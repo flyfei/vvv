@@ -77,23 +77,29 @@
 					</select>
 					</div>
 				</div>
-			  <div class="form-group">
-			    <label for="url" class="col-sm-2 control-label">视频地址</label>
+			<div class="form-group">
+				<label for="url" class="col-sm-2 control-label">视频地址</label>
 			    <div class="col-sm-10">
-			      <input type="url" class="form-control" id="url" name="url" placeholder="视频地址">
+					<input type="url" class="form-control" id="url" name="url" placeholder="视频地址">
 			    </div>
-			  </div>
-			  <div class="form-group">
+			</div>
+			<div class="form-group">
 			    <div class="col-sm-offset-2 col-sm-10">
-			      <button type="button" id="play" class="btn btn-primary">解 析</button>
+					<button type="button" id="play" class="btn btn-primary">解 析</button>
 			    </div>
 				</div>
 				<div>
-						<small>视频全屏播放：<br/> 方法1: 点击视频内容一次，如果出现视频控制栏，点击右下角全屏图标 <br/> 方法2: 两手指按住视频内容，进行放大操作（将两个手指同时放到视频内容上，按住并向相反方向滑动）</small>
+					<small>视频全屏播放：<br/> 方法1: 点击视频内容一次，如果出现视频控制栏，点击右下角全屏图标 <br/> 方法2: 两手指按住视频内容，进行放大操作（将两个手指同时放到视频内容上，按住并向相反方向滑动）</small>
 				</div>
 			</form>
+			<div class="form-group">
+			    <div class="col-sm-10">
+					<input type="text" class="form-control" id="search_text" name="search_text" placeholder="搜索">
+			    </div>
+				<button type="button" id="search_btn" class="btn btn-primary">搜  索</button>
 			</div>
-			<hr>
+		</div>
+		<hr>
 	
 	</div>
     
@@ -110,6 +116,14 @@
 					return;
 				}
 				window.open($api+$url);
+			});
+			$("#search_btn").click(function(){
+				$search_text = $("#search_text").val();
+				if($search_text == "" || $search_text == null){
+					alert('搜索内容不能为空');
+					return;
+				}
+				window.open("https://z1.im1907.top/?jx=" + $search_text);
 			});
 	    // function init(){
 		  //   var ckapi = $.cookie("apiList");
