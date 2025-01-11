@@ -1,141 +1,156 @@
 <!DOCTYPE html>
 <!-- saved from url=(0022)https://vip.yantuz.cn/ -->
-<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="zh-CN">
 
-    <title>全网VIP视频解析</title>
-    
-    <!-- Bootstrap -->
-    <link href="https://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
-    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
-    <!--[if lt IE 9]>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>全网VIP视频解析</title>
+
+	<!-- Bootstrap -->
+	<link href="https://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+	<!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+	<!--[if lt IE 9]>
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style>
-	    .header{
-		    margin-top:10%;
-	    }
-	    .main{
-		    padding:10px 15%;
-	    }
-	    .footer{
-		    padding:10px 15%;
-	    }
-    </style>
-</head><body style="">
+	<style>
+		.header {
+			margin-top: 10%;
+		}
+
+		.main {
+			padding: 10px 15%;
+		}
+
+		.footer {
+			padding: 10px 15%;
+		}
+	</style>
+</head>
+
+<body style="">
 	<div class="container">
-	    <div class="header h1 text-center">
-		    <h1>全网VIP视频解析</h1>
-		    <small>选取解析API并输入视频地址即可免VIP播放</small>
-	    </div>
-	    <hr>
-	    <div class="main">
+		<div class="header h1 text-center">
+			<h1>全网VIP视频解析</h1>
+			<small>选取解析API并输入视频地址即可免VIP播放</small>
+		</div>
+		<hr>
+		<div class="main">
 			<form class="form-horizontal" method="post">
 				<div class="form-group">
 					<label for="api" class="col-sm-2 control-label">通道</label>
 					<div class="col-sm-10">
-					<select id="api" name="api" class="form-control">
-						<option value="https://jx.jsonplayer.com/player/?url=">通道A</option>
-						<option value="https://www.nxflv.com/?url=">通道B</option>
-						<option value="https://www.administratorw.com/video.php?url=">通道C</option>
-						<option value="https://svip.bljiex.cc/?v=">通道D</option>
-						<option value="https://okjx.cc/?url=">通道E</option>
-						<option value="https://jx.m3u8.tv/jiexi/?url=">通道F</option>
-						<option value="https://jx.xmflv.com/?url=">通道G</option>
-						<option value="https://www.ckmov.vip/api.php?url=">通道H</option>
-						<option value="https://www.ckplayer.vip/jiexi/?url=">通道I</option>
-						<option value="https://ckmov.ccyjjd.com/ckmov/?url=">通道J</option>
-						<option value="https://www.1717yun.com/jx/ty.php?url=">通道K</option>
-						<option value="https://jx.aidouer.net/?url=">通道L</option>
-						<option value="https://yparse.jn1.cc/index.php?url=">通道M</option>
-						<option value="https://www.pangujiexi.cc/jiexi.php?url=">通道N</option>
-						<option value="https://im1907.top/?jx=">通道O</option>
-						<option value="https://www.pangujiexi.cc/jiexi.php?url=">通道P</option>
-						<option value="https://jx.playerjy.com/?url=">通道Q</option>
-						<option value="https://z1.im1907.top/?jx=">通道R</option>
-						<option value="https://jx.xmflv.cc/?url=">通道S</option>
-						<option value="https://jx.yangtu.top/?url=">通道T</option>
-						<option value="https://www.yemu.xyz/?url=">通道U</option>
-						<option value="https://api.qianqi.net/vip/?url=">通道V</option>
-						<option value="https://www.yydsok.com/v/?url=">通道W</option>
-						<option value="https://jx.xyflv.cc/?url=">通道X</option>
-						<option value="https://jx.yparse.com/index.php?url=">通道Y</option>
-						<option value="https://www.8090g.cn/?url=">通道Z</option>
-						<option value="https://jx.77flv.cc/?url=">通道Z1</option>
-						<option value="https://www.pouyun.com/?url=">通道Z2</option>
-						<option value="https://video.isyour.love/player/getplayer?url=">通道Z3</option>
-						<option value="https://vip.bljiex.com/?v=">通道Z4</option>
-						<option value="https://jx.playerjy.com/?url=">通道Z5</option>
-						<option value="https://jx.777jiexi.com/player/?url=">通道Z6</option>
-						<option value="https://jx.aidouer.net/?url=">通道Z7</option>
-						<option value="https://www.pangujiexi.com/jiexi/?url=">通道Z8</option>
-						
-					</select>
+						<select id="api" name="api" class="form-control">
+							<option value="https://jx.jsonplayer.com/player/?url=">通道A</option>
+							<option value="https://www.nxflv.com/?url=">通道B</option>
+							<option value="https://www.administratorw.com/video.php?url=">通道C</option>
+							<option value="https://svip.bljiex.cc/?v=">通道D</option>
+							<option value="https://okjx.cc/?url=">通道E</option>
+							<option value="https://jx.m3u8.tv/jiexi/?url=">通道F</option>
+							<option value="https://jx.xmflv.com/?url=">通道G</option>
+							<option value="https://www.ckmov.vip/api.php?url=">通道H</option>
+							<option value="https://www.ckplayer.vip/jiexi/?url=">通道I</option>
+							<option value="https://ckmov.ccyjjd.com/ckmov/?url=">通道J</option>
+							<option value="https://www.1717yun.com/jx/ty.php?url=">通道K</option>
+							<option value="https://jx.aidouer.net/?url=">通道L</option>
+							<option value="https://yparse.jn1.cc/index.php?url=">通道M</option>
+							<option value="https://www.pangujiexi.cc/jiexi.php?url=">通道N</option>
+							<option value="https://im1907.top/?jx=">通道O</option>
+							<option value="https://www.pangujiexi.cc/jiexi.php?url=">通道P</option>
+							<option value="https://jx.playerjy.com/?url=">通道Q</option>
+							<option value="https://z1.im1907.top/?jx=">通道R</option>
+							<option value="https://jx.xmflv.cc/?url=">通道S</option>
+							<option value="https://jx.yangtu.top/?url=">通道T</option>
+							<option value="https://www.yemu.xyz/?url=">通道U</option>
+							<option value="https://api.qianqi.net/vip/?url=">通道V</option>
+							<option value="https://www.yydsok.com/v/?url=">通道W</option>
+							<option value="https://jx.xyflv.cc/?url=">通道X</option>
+							<option value="https://jx.yparse.com/index.php?url=">通道Y</option>
+							<option value="https://www.8090g.cn/?url=">通道Z</option>
+							<option value="https://jx.77flv.cc/?url=">通道Z1</option>
+							<option value="https://www.pouyun.com/?url=">通道Z2</option>
+							<option value="https://video.isyour.love/player/getplayer?url=">通道Z3</option>
+							<option value="https://vip.bljiex.com/?v=">通道Z4</option>
+							<option value="https://jx.playerjy.com/?url=">通道Z5</option>
+							<option value="https://jx.777jiexi.com/player/?url=">通道Z6</option>
+							<option value="https://jx.aidouer.net/?url=">通道Z7</option>
+							<option value="https://www.pangujiexi.com/jiexi/?url=">通道Z8</option>
+
+						</select>
 					</div>
 				</div>
-			<div class="form-group">
-				<label for="url" class="col-sm-2 control-label">视频地址</label>
-			    <div class="col-sm-10">
-					<input type="url" class="form-control" id="url" name="url" placeholder="视频地址">
-			    </div>
-			</div>
-			<div class="form-group">
-			    <div class="col-sm-offset-2 col-sm-10">
-					<button type="button" id="play" class="btn btn-primary">解 析</button>
-			    </div>
+				<div class="form-group">
+					<label for="url" class="col-sm-2 control-label">视频地址</label>
+					<div class="col-sm-10">
+						<input type="url" class="form-control" id="url" name="url" placeholder="视频地址">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						<button type="button" id="play" class="btn btn-primary">解 析</button>
+					</div>
 				</div>
 				<div>
-					<small>视频全屏播放：<br/> 方法1: 点击视频内容一次，如果出现视频控制栏，点击右下角全屏图标 <br/> 方法2: 两手指按住视频内容，进行放大操作（将两个手指同时放到视频内容上，按住并向相反方向滑动）</small>
+					<small>视频全屏播放：<br /> 方法1: 点击视频内容一次，如果出现视频控制栏，点击右下角全屏图标 <br /> 方法2:
+						两手指按住视频内容，进行放大操作（将两个手指同时放到视频内容上，按住并向相反方向滑动）</small>
+				</div>
+				<div class="form-group">
+					<label for="url" class="col-sm-2 control-label">搜索</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="search_text" name="search_text" placeholder="搜索">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						<button type="button" id="search_btn" class="btn btn-primary">搜 索</button>
+					</div>
 				</div>
 			</form>
-			<div class="form-group">
-			    <div class="col-sm-10">
-					<input type="text" class="form-control" id="search_text" name="search_text" placeholder="搜索">
-			    </div>
-				<button type="button" id="search_btn" class="btn btn-primary">搜  索</button>
-			</div>
 		</div>
 		<hr>
-	
+
 	</div>
-    
-    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
-    <script src="https://libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
-    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
-    <script src="https://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-    <script>
-			$("#play").click(function(){
-				$api = $("#api").val();
-				$url = $("#url").val();
-				if($url == "" || $url == null || !/^http.*$/.test($url)){
-					alert('视频地址不正确！');
-					return;
-				}
-				window.open($api+$url);
-			});
-			$("#search_btn").click(function(){
-				$search_text = $("#search_text").val();
-				if($search_text == "" || $search_text == null){
-					alert('搜索内容不能为空');
-					return;
-				}
-				window.open("https://z1.im1907.top/?jx=" + $search_text);
-			});
-	    // function init(){
-		  //   var ckapi = $.cookie("apiList");
-		  //   if(ckapi && ckapi != ""){
-			//     $("#apiList").val(ckapi);
-		  //   }
-		  //   setApi();
-	    // }
-	    // init();
-      // function setDefault(){
-      //   $.cookie("apiList","");
-      //   window.location.reload();
-      // }
-    </script>
-</body></html>
+
+	<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+	<script src="https://libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+	<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+	<script src="https://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script>
+		$("#play").click(function () {
+			$api = $("#api").val();
+			$url = $("#url").val();
+			if ($url == "" || $url == null || !/^http.*$/.test($url)) {
+				alert('视频地址不正确！');
+				return;
+			}
+			window.open($api + $url);
+		});
+		$("#search_btn").click(function () {
+			$search_text = $("#search_text").val();
+			if ($search_text == "" || $search_text == null) {
+				alert('搜索内容不能为空');
+				return;
+			}
+			window.open("https://z1.im1907.top/?jx=" + $search_text);
+		});
+		// function init(){
+		//   var ckapi = $.cookie("apiList");
+		//   if(ckapi && ckapi != ""){
+		//     $("#apiList").val(ckapi);
+		//   }
+		//   setApi();
+		// }
+		// init();
+		// function setDefault(){
+		//   $.cookie("apiList","");
+		//   window.location.reload();
+		// }
+	</script>
+</body>
+
+</html>
